@@ -1,0 +1,95 @@
+.nav{
+    padding-left:70px;
+    margin-top: 30px;
+    border: solid rgb(0, 255, 26);
+    font-style: italic;
+    font-size:larger;
+    box-sizing: border-box;
+    display:flex;
+    justify-content:left;
+    background-color: blanchedalmond;
+    position:sticky;
+    top: 2px;
+}
+.siva{
+    color: black;
+    align-items:center;
+    padding-left:10px;
+    margin: 0px;
+    height:0;
+    width: 20;
+    text-transform: uppercase;
+}
+body{
+    color:red;
+}
+.nayu{
+    list-style:circle;
+    display: flex;
+    gap: 200px;
+    cursor: pointer;
+}
+.kuff{
+    background-color:rgb(12, 217, 5);
+}
+.fle{
+    display: flex;
+    justify-content:space-between;
+    align-items:left;
+    flex-wrap: wrap;
+    gap:3px;
+    text-transform: uppercase;
+}
+
+.bullet{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(1,100px);
+    gap: 10px;
+    background:rgb(165, 52, 214);
+    padding: 10px;
+    border-radius: 20px;
+}
+.item{
+    display: flex;
+    color:darkred;
+    align-items: center;
+justify-content: center;
+font-size: larger;
+background-color: rgb(243, 246, 245);
+border-radius: 20px;
+}
+@media(max-width:700px){
+    body{
+    background-color:green;
+}
+}
+@keyframes bounce {
+0%{transform:translateY(0);}
+50%{transform: translatex(20px);}
+100%{transform:translateY(0);}
+}
+.INT{
+    display: flex;
+    gap: 40PX;
+    height: 30px;
+    font-size: large;
+    background-color: aqua;
+    animation:bounce 3s ease-in-out infinite;
+}
+@keyframes fadeout{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+.pic{
+animation:fadeout 3s ease-in-out;
+}
+
+:root{
+    --main-color:rgb(121, 201, 121);
+    --secondary-color:red;
+    --text-color: black;
+}
+.var{
+    background: var(--main-color);
+}
